@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>DevvArena | BoxShadow Generator</title>
+    <meta name="description" content="Page description goes here.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
+
+</head>
+
+<body onload="boxShadowGenExecute()">
+    <header class="boxShadowHeader">
+        <div class="DevvarenaLogo" onclick="location.reload()"><img src="/assets/logo.svg" /
+                alt="LOGO">Devv<b>Arena.</b></div>
+        <h3>CSS Box Shadow Generator</h3>
+
+
+    </header>
+    <main class="mainboxShadowSection">
+        <section class="leftboxShadowSection">
+
+            <iframe class="boxShadowPreviewFrame"></iframe>
+            <div class="codePreviewFrame">
+                <div class="whenCodeEcopied">Copied!</div>
+                <span class="cssOPtionButton">
+                    <button class="SimpleCssboxShadow">CSS</button>
+                </span>
+                <pre class="getPreviewboxShadowCode"></pre>
+                <button class="copyboxShadowCode">Copy Code</button>
+            </div>
+        </section>
+        <section class="rightboxShadowSection">
+
+            <div class="controlboxShadowInset ">
+                <label for="checkForInset">Inset<input type="checkbox" id="checkForInset"></label>
+
+            </div>
+
+            <div class="controlboxShadowtranspareancy ">
+                <span>Horizontal Length</span>
+                <span class=" range-wrap">
+                    <input type="range" class="range" id="boxShadowTranspRange" min="-200" max="200" step="1" value="0">
+                    <output class="bubble"></output>
+                </span>
+
+            </div>
+            <div class="controlboxShadowBdRadius">
+                <span>Vertical Length</span>
+                <span class=" range-wrap">
+                    <input type="range" class="range" id="boxShadowBdrRange" min="-200" max="200" step="1" value="10">
+                    <output class="bubble"></output>
+                </span>
+            </div>
+            <div class="controlboxShadowBlurness">
+                <span>Blur Radius</span>
+                <span class=" range-wrap">
+                    <input type="range" class="range" id="boxShadowBlurRange" min="0" max="300" step="1" value="15">
+                    <output class="bubble"></output>
+                </span>
+
+
+            </div>
+
+            <div class="ControlboxShadowOutline">
+                <span>Spread Radius</span>
+                <span class=" range-wrap">
+                    <input type="range" class="range" id="boxShadowOutlineRange" min="-200" max="200" step="1"
+                        value="-3">
+                    <output class="bubble"></output>
+                </span>
+            </div>
+            <div class="controlboxShadowColor">
+                <span>Color</span>
+                <span><input type="color" id="boxShadowColorSlide" value="#404040"></span>
+            </div>
+
+
+        </section>
+
+
+    </main>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
